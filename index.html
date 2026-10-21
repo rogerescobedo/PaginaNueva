@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171822">
+  <meta name="description" content="Un laboratorio de cómputo donde las ideas se convierten en páginas web. Curso Tecnologías de Diseño Web, Carrera de Matemática e Informática.">
+  <meta property="og:title" content="Laboratorio Cómic | Tecnologías de Diseño Web">
+  <meta property="og:description" content="HTML + CSS + JavaScript + Bootstrap = ¡creatividad en acción!">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/estudiantes-laboratorio.webp">
+  <title>LAB! — Laboratorio de Cómputo | Matemática e Informática</title>
+  <!-- Bootstrap 5: se carga desde CDN. El diseño principal tiene estilos de respaldo para uso sin conexión. -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <div class="scroll-progress" aria-hidden="true"><span id="scroll-bar"></span></div>
+
+  <header class="site-header" id="inicio">
+    <nav class="navigation container" aria-label="Navegación principal">
+      <a class="brand" href="#inicio" aria-label="LAB!, ir al inicio">
+        <span class="brand-icon">L<span>!</span></span><span class="brand-word">LAB<span class="brand-star">✳</span></span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-controls="nav-links" aria-expanded="false" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="#laboratorio">El laboratorio</a>
+        <a href="#herramientas">Herramientas</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#zona-codigo">Código en vivo</a>
+        <a class="nav-pill" href="#reto">¡Acepta el reto! <span aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section class="hero comic-dots" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-dot"></span> TECNOLOGÍAS DE DISEÑO WEB <span class="eyebrow-line"></span> 2026</div>
+          <h1 id="hero-title">AQUÍ LAS<br><span class="paint-highlight">IDEAS</span><br>HACEN <span class="boom-text">¡BOOM!<svg class="boom-scribble" viewBox="0 0 320 22" aria-hidden="true"><path d="M3 13C59 4 107 18 160 11S255 4 317 11" fill="none" stroke="currentColor" stroke-width="10" stroke-linecap="round"/></svg></span></h1>
+          <p class="hero-description">Un laboratorio, muchas mentes creativas y una misión: transformar <strong>líneas de código en experiencias digitales increíbles</strong>.</p>
+          <p class="hero-career">Carrera de <strong>Matemática e Informática</strong> <span aria-hidden="true">✦</span> Iquitos, Loreto</p>
+          <div class="hero-actions">
+            <a class="comic-btn btn-yellow" href="#laboratorio">Entra al laboratorio <span aria-hidden="true">↗</span></a>
+            <a class="comic-btn btn-outline" href="#zona-codigo">Prueba el código <span aria-hidden="true">⌘</span></a>
+          </div>
+          <div class="micro-note"><span class="hand-arrow" aria-hidden="true">⤴</span> Desliza para descubrir esta historia</div>
+        </div>
+        <div class="hero-art" aria-label="Fotografía del grupo de estudiantes en el laboratorio de cómputo">
+          <div class="image-halftone" aria-hidden="true"></div>
+          <div class="photo-frame">
+            <div class="photo-topline"><span>LAB_CAM_001.JPG</span><span class="photo-live"><i></i> EN CLASE</span></div>
+            <img src="assets/estudiantes-laboratorio.webp" width="1600" height="1200" alt="Estudiantes de Tecnologías de Diseño Web reunidos frente a sus computadoras en el laboratorio." fetchpriority="high">
+            <div class="photo-bottomline"><span>LA GENERACIÓN QUE CREA EN LA WEB</span><button type="button" id="view-photo" class="photo-view-btn">AMPLIAR FOTO ↗</button></div>
+          </div>
+          <div class="speech-bubble" aria-hidden="true">¡CÓDIGO<br>EN ACCIÓN!<span class="bubble-tail"></span></div>
+          <svg class="flash-star" viewBox="0 0 145 145" aria-hidden="true"><path d="M72.5 0 87 48 133 21 106 64 145 82 100 89 120 137 78 106 48 145 49 99 1 109 38 74 0 42 48 48Z" fill="#ffcf3c" stroke="#171822" stroke-width="5"/><text x="72" y="82" font-size="25" font-weight="900" text-anchor="middle" transform="rotate(-14 72 82)">WOW!</text></svg>
+          <span class="hero-star hero-star-one" aria-hidden="true">✳</span><span class="hero-star hero-star-two" aria-hidden="true">✦</span>
+        </div>
+      </div>
+      <div class="section-edge edge-hero" aria-hidden="true"></div>
+    </section>
+
+    <div class="ticker" aria-label="Tecnologías que aprendemos">
+      <div class="ticker-track" aria-hidden="true">
+        <span>DISEÑA</span><b>✳</b><span>PROGRAMA</span><b>✳</b><span>EXPERIMENTA</span><b>✳</b><span>CONSTRUYE</span><b>✳</b><span>PUBLICA</span><b>✳</b>
+        <span>DISEÑA</span><b>✳</b><span>PROGRAMA</span><b>✳</b><span>EXPERIMENTA</span><b>✳</b><span>CONSTRUYE</span><b>✳</b><span>PUBLICA</span><b>✳</b>
+      </div>
+    </div>
+
+    <section class="intro section-pad" id="laboratorio" aria-labelledby="intro-title">
+      <div class="container">
+        <div class="section-heading intro-heading reveal">
+          <div><span class="chapter-label">CAPÍTULO 01 / NUESTRO ESPACIO</span><h2 id="intro-title">NO ES SOLO UN<br>LABORATORIO<span class="red-period">.</span></h2></div>
+          <p>Es el lugar donde una pregunta se convierte en una idea, la idea en un prototipo y el prototipo en algo que funciona.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card feature-yellow reveal"><div class="feature-upper"><span>01 / IMAGINAR</span><span class="feature-icon">✏</span></div><div class="feature-illustration sketch-idea" aria-hidden="true"><span class="sketch-sun">✳</span><div class="sketch-bubble">¿Y SI...?</div><span class="sketch-tiny">✦</span></div><h3>IDEAS SIN LÍMITE</h3><p>Analizamos problemas, compartimos ideas y dibujamos soluciones antes de escribir código.</p><span class="feature-arrow" aria-hidden="true">↗</span></article>
+          <article class="feature-card feature-blue reveal"><div class="feature-upper"><span>02 / CREAR</span><span class="feature-icon">⌘</span></div><div class="feature-illustration sketch-code" aria-hidden="true"><div class="sketch-window"><div class="sketch-dots"><i></i><i></i><i></i></div><div class="sketch-line a"></div><div class="sketch-line b"></div><div class="sketch-line c"></div><div class="sketch-line d"></div></div><span class="sketch-code-glyph">&lt;/&gt;</span></div><h3>MANOS AL TECLADO</h3><p>Probamos HTML, CSS y JavaScript. Si algo falla, aprendemos, corregimos y lo mejoramos.</p><span class="feature-arrow" aria-hidden="true">↗</span></article>
+          <article class="feature-card feature-coral reveal"><div class="feature-upper"><span>03 / COMPARTIR</span><span class="feature-icon">↗</span></div><div class="feature-illustration sketch-launch" aria-hidden="true"><div class="rocket-body">▲<span>★</span></div><span class="rocket-smoke">☁</span><span class="rocket-burst">✷</span></div><h3>DEL AULA AL MUNDO</h3><p>Diseñamos sitios responsivos, presentamos resultados y preparamos proyectos para publicarlos.</p><span class="feature-arrow" aria-hidden="true">↗</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="statement-section" aria-labelledby="statement-title">
+      <div class="container statement-grid">
+        <div class="statement-symbol reveal" aria-hidden="true"><div class="symbol-screen"><span class="symbol-top">● ● ●</span><span class="symbol-text">{<i>♥</i>}</span><span class="symbol-footer">HELLO, WEB!</span></div><span class="symbol-ray ray-1">✳</span><span class="symbol-ray ray-2">✦</span><span class="symbol-ray ray-3">⚡</span></div>
+        <div class="reveal"><span class="chapter-label light-label">ESTO NOS MUEVE</span><h2 id="statement-title">APRENDER.<br>FALLAR.<br><span>VOLVER A<br>INTENTAR.</span></h2><p>Porque programar no es memorizar etiquetas: es atreverse a crear, resolver problemas y trabajar en equipo.</p><button class="comic-btn btn-mint" id="boom-button" type="button">¡Lanza un BOOM! <span aria-hidden="true">✳</span></button></div>
+      </div>
+    </section>
+
+    <section class="tools-section section-pad" id="herramientas" aria-labelledby="tools-title">
+      <div class="container"><div class="section-heading tools-heading reveal"><div><span class="chapter-label">CAPÍTULO 02 / NUESTRO KIT</span><h2 id="tools-title">SUPERPODERES<br><span class="blue-text">DIGITALES.</span></h2></div><p>Las herramientas que convierten un archivo vacío en un proyecto web con identidad propia.</p></div>
+        <div class="tools-grid">
+          <article class="tool-card reveal"><div class="tool-icon html-icon">&lt;/&gt;</div><span class="tool-number">01</span><h3>HTML</h3><p>La estructura de cada historia.</p><span class="tool-category">ESTRUCTURA</span></article>
+          <article class="tool-card reveal"><div class="tool-icon css-icon">#</div><span class="tool-number">02</span><h3>CSS</h3><p>El estilo, el color y el movimiento.</p><span class="tool-category">DISEÑO</span></article>
+          <article class="tool-card reveal"><div class="tool-icon js-icon">JS</div><span class="tool-number">03</span><h3>JAVASCRIPT</h3><p>Interacción que cobra vida.</p><span class="tool-category">INTERACTIVIDAD</span></article>
+          <article class="tool-card reveal"><div class="tool-icon bootstrap-icon">B</div><span class="tool-number">04</span><h3>BOOTSTRAP</h3><p>Componentes listos para adaptarse.</p><span class="tool-category">RESPONSIVE</span></article>
+        </div>
+        <div class="side-note reveal"><span aria-hidden="true">★</span> EXTRA: ACCESIBILIDAD + DISEÑO RESPONSIVO + TRABAJO COLABORATIVO <span aria-hidden="true">★</span></div>
+      </div>
+    </section>
+
+    <section class="projects-section section-pad" id="proyectos" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-heading projects-heading reveal"><div><span class="chapter-label">CAPÍTULO 03 / IDEAS PARA CREAR</span><h2 id="projects-title">PRÓXIMAS<br><span class="paint-white">HISTORIAS.</span></h2></div><p>Propuestas de proyectos que pueden convertirse en páginas reales. Selecciona una categoría y descubre el desafío.</p></div>
+        <div class="filter-bar reveal" role="group" aria-label="Filtrar ideas de proyecto"><button class="filter-button active" type="button" data-filter="all" aria-pressed="true">TODOS <span>04</span></button><button class="filter-button" type="button" data-filter="web" aria-pressed="false">PÁGINAS WEB</button><button class="filter-button" type="button" data-filter="ui" aria-pressed="false">INTERFACES</button><button class="filter-button" type="button" data-filter="impacto" aria-pressed="false">IMPACTO LOCAL</button></div>
+        <div class="projects-grid" id="projects-grid">
+          <article class="project-card reveal" data-category="web impacto"><div class="project-art project-amazon"><div class="browser-chrome"><i></i><i></i><i></i><span>amazonia.pe</span></div><div class="amazon-hills"><span class="amazon-orbit">✺</span><span class="amazon-title">LORETO<br>VIVE<span>.</span></span><span class="amazon-slogan">Naturaleza · Cultura · Futuro</span></div></div><div class="project-meta"><span>01 / WEB + LORETO</span><span aria-hidden="true">↗</span></div><h3>LANDING AMAZÓNICA</h3><p>Una web visual para celebrar iniciativas, cultura o emprendimientos de nuestra región.</p><button class="text-cta" type="button" data-project="amazonia">Ver el desafío <span aria-hidden="true">→</span></button></article>
+          <article class="project-card reveal" data-category="ui"><div class="project-art project-dashboard"><div class="dashboard-sidebar"><span>☰</span><span>◉</span><span>▦</span><span>⚙</span></div><div class="dashboard-main"><div class="dash-title">DATOS EN VIVO <span>●</span></div><div class="dash-cards"><div>24<small>VISITAS</small></div><div>88<small>IDEAS</small></div></div><div class="dash-chart"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div></div><div class="project-meta"><span>02 / UI + DATOS</span><span aria-hidden="true">↗</span></div><h3>MINI DASHBOARD</h3><p>Indicadores, tarjetas y gráficos sencillos para aprender organización visual.</p><button class="text-cta" type="button" data-project="dashboard">Ver el desafío <span aria-hidden="true">→</span></button></article>
+          <article class="project-card reveal" data-category="web"><div class="project-art project-portfolio"><div class="portfolio-sheet"><div class="portfolio-avatar">✦</div><div class="portfolio-lines"><strong>HOLA, SOY<br>CREADOR/A</strong><span></span><span></span><span></span><small>VER MI TRABAJO →</small></div></div><span class="portfolio-deco">★</span></div><div class="project-meta"><span>03 / WEB PERSONAL</span><span aria-hidden="true">↗</span></div><h3>PORTAFOLIO CREATIVO</h3><p>Un espacio propio para presentar talentos, habilidades y primeros proyectos.</p><button class="text-cta" type="button" data-project="portfolio">Ver el desafío <span aria-hidden="true">→</span></button></article>
+          <article class="project-card reveal" data-category="ui impacto"><div class="project-art project-community"><div class="community-phone"><div class="phone-speaker"></div><div class="phone-heading">MI COMUNIDAD <span>♥</span></div><div class="phone-visual">☀ <span>♣ ♣ ♣</span></div><div class="phone-row">EVENTOS CERCANOS <span>→</span></div><div class="phone-row">INICIATIVAS <span>→</span></div></div><span class="community-spark">✳</span></div><div class="project-meta"><span>04 / UI + COMUNIDAD</span><span aria-hidden="true">↗</span></div><h3>COMUNIDAD CONECTADA</h3><p>Una propuesta de interfaz para difundir información útil de la comunidad.</p><button class="text-cta" type="button" data-project="comunidad">Ver el desafío <span aria-hidden="true">→</span></button></article>
+        </div>
+        <p class="project-disclaimer">* Son ideas de práctica para el curso, no una lista de trabajos ya realizados por los estudiantes.</p>
+      </div>
+    </section>
+
+    <section class="editor-section section-pad comic-dots" id="zona-codigo" aria-labelledby="editor-title">
+      <div class="container"><div class="editor-heading reveal"><span class="chapter-label">CAPÍTULO 04 / LABORATORIO INTERACTIVO</span><h2 id="editor-title">TOCA EL CÓDIGO.<br><span>CAMBIA EL MUNDO.</span></h2><p>¿Te atreves? Modifica el HTML, el CSS o el JavaScript. Pulsa <strong>«Ejecutar»</strong> y observa el resultado al instante.</p></div>
+        <div class="editor-shell reveal">
+          <div class="editor-shell-top"><div class="shell-dots" aria-hidden="true"><i></i><i></i><i></i></div><span>LAB / PLAYGROUND — index.html</span><span class="terminal-signal">● EN VIVO</span></div>
+          <div class="editor-columns"><div class="code-pane"><div class="code-tabs" role="tablist" aria-label="Lenguaje del editor"><button type="button" class="code-tab selected" role="tab" aria-selected="true" aria-controls="code-editor" data-tab="html">HTML</button><button type="button" class="code-tab" role="tab" aria-selected="false" aria-controls="code-editor" data-tab="css">CSS</button><button type="button" class="code-tab" role="tab" aria-selected="false" aria-controls="code-editor" data-tab="js">JS</button></div><label class="visually-hidden" for="code-editor">Código editable</label><textarea id="code-editor" spellcheck="false" autocapitalize="off" autocomplete="off" autocorrect="off" aria-label="Editor de código"></textarea><div class="code-actions"><button class="editor-run" type="button" id="run-code">▶ EJECUTAR</button><button class="editor-reset" type="button" id="reset-code" title="Restablecer los tres archivos">↺ Reiniciar</button><span class="shortcut-label">Ctrl/⌘ + Enter</span></div></div><div class="preview-pane"><div class="preview-top"><span>◉ VISTA PREVIA</span><span class="preview-status" id="preview-status" role="status">LISTO</span></div><iframe id="code-preview" title="Resultado del código de prueba" sandbox="allow-scripts" loading="lazy"></iframe><div class="preview-footer">TU IDEA, EN LA PANTALLA. <span>✷</span></div></div></div>
+        </div>
+        <div class="editor-footnote"><span aria-hidden="true">↗</span> La vista previa ejecuta el código en un marco aislado, sin enviarlo a ningún servidor.</div>
+      </div>
+    </section>
+
+    <section class="roadmap-section section-pad" aria-labelledby="roadmap-title"><div class="container"><div class="section-heading reveal"><div><span class="chapter-label">CAPÍTULO 05 / EL CAMINO</span><h2 id="roadmap-title">DE CERO<br>A <span class="coral-text">¡WOW!</span></h2></div><p>Una ruta para pasar de la primera etiqueta HTML a una página preparada para compartir.</p></div><div class="roadmap-grid"><div class="roadmap-step reveal"><span class="roadmap-number">01</span><span class="roadmap-glyph">⌗</span><h3>ESTRUCTURA</h3><p>Piensa el contenido y escribe HTML semántico.</p></div><div class="roadmap-step reveal"><span class="roadmap-number">02</span><span class="roadmap-glyph">✳</span><h3>PERSONALIDAD</h3><p>Aplica estilos, colores, tipografía y diseño adaptable.</p></div><div class="roadmap-step reveal"><span class="roadmap-number">03</span><span class="roadmap-glyph">⚡</span><h3>INTERACCIÓN</h3><p>Da vida a los componentes con JavaScript.</p></div><div class="roadmap-step reveal"><span class="roadmap-number">04</span><span class="roadmap-glyph">↗</span><h3>PUBLICACIÓN</h3><p>Prueba, presenta y lleva tu trabajo a la web.</p></div></div></div></section>
+
+    <section class="quiz-section section-pad" id="reto" aria-labelledby="quiz-title"><div class="container quiz-layout"><div class="quiz-intro reveal"><span class="chapter-label">BONUS / COMPRUEBA TUS PODERES</span><h2 id="quiz-title">RETO<br><span>RELÁMPAGO</span><span class="quiz-zap" aria-hidden="true">⚡</span></h2><p>¿Qué tan listo estás para diseñar la próxima gran web? Tres preguntas. Cero excusas.</p><div class="quiz-decoration" aria-hidden="true">¡TÚ<br>PUEDES!</div></div><div class="quiz-card reveal" aria-live="polite"><div class="quiz-header"><span>PRUEBA RÁPIDA</span><span id="quiz-progress">01 / 03</span></div><div class="quiz-progress-track"><span id="quiz-progress-bar"></span></div><div id="quiz-content"></div></div></div></section>
+
+    <section class="end-banner" aria-labelledby="end-title"><div class="container end-content"><span class="end-stars" aria-hidden="true">✦ ✳ ✦</span><h2 id="end-title">EL FUTURO NO SE ESPERA.<br><span>¡SE PROGRAMA!</span></h2><p>Matemática e Informática · Tecnologías de Diseño Web</p><a class="comic-btn btn-dark" href="#inicio">Volver al inicio <span aria-hidden="true">↑</span></a></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-content"><a class="footer-brand" href="#inicio">LAB<span>!</span></a><p>Un espacio para imaginar, crear y aprender juntos.<br><strong>Carrera de Matemática e Informática</strong> · Iquitos, Perú</p><div class="footer-right"><span>HECHO CON &lt;3 Y MUCHAS IDEAS</span><span>© <span id="year">2026</span> · PROYECTO EDUCATIVO</span></div></div></footer>
+
+  <dialog id="project-dialog" class="project-dialog" aria-labelledby="dialog-title"><div class="dialog-header"><span>FICHA DE MISIÓN ✳</span><button class="dialog-close" type="button" id="dialog-close" aria-label="Cerrar diálogo">✕</button></div><div class="dialog-body"><span class="chapter-label" id="dialog-tag">DESAFÍO</span><h2 id="dialog-title"></h2><p id="dialog-description"></p><h3>¿QUÉ DEBERÍA INCLUIR?</h3><ul id="dialog-list"></ul><div class="dialog-bottom"><span>¿LISTOS PARA PROGRAMAR?</span><button type="button" class="comic-btn btn-yellow" id="dialog-done">¡ENTENDIDO! ↗</button></div></div></dialog>
+  <dialog id="photo-dialog" class="photo-dialog" aria-label="Fotografía completa del grupo de estudiantes">
+    <button class="photo-dialog-close" id="close-photo" type="button" aria-label="Cerrar fotografía">✕ CERRAR</button>
+    <img src="assets/estudiantes-laboratorio.webp" alt="Fotografía completa de los estudiantes de Tecnologías de Diseño Web en su laboratorio de cómputo." width="1600" height="1200" loading="lazy">
+    <p>UN LABORATORIO. MUCHAS IDEAS. <span>✳</span></p>
+  </dialog>
+  <div id="fx-layer" class="fx-layer" aria-hidden="true"></div>
+  <!-- Bootstrap JS: opcional. Las interacciones de LAB! funcionan sin esta descarga. -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="js/app.js" defer></script>
+</body>
+</html>
